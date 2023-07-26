@@ -27,16 +27,12 @@ Cypress.Commands.add("login", (email, password) => {
   cy.session([email, password], () => {
     cy.visit("https://dev.autopv.7secondsolar.com/");
 
-    cy.get('input[name="email"]').type("namhlmaninjw@gmail.com"); // Replace with your username
+    cy.get('input[name="email"]').type("namhlmaninjw@gmail.com");
     cy.get('input[name="password"]').type("Indie123@");
     cy.get(".css-b5leqj > .chakra-button").click();
 
     //Add assertions or further actions after successful login
-    cy.url().should(
-      "eq",
-      "https://dev.autopv.7secondsolar.com/auth/new-project/step-1"
-    );
-    cy.get("p").should("be.visible");
+
     // {
     //cacheAcrossSpecs: true,
   });

@@ -9,7 +9,8 @@ describe("Enter Values on step1", () => {
       "eq",
       "https://dev.autopv.7secondsolar.com/auth/new-project/step-1"
     );
-    cy.get("p").should("be.visible");
+
+    cy.contains("Step 1").should("be.visible");
     cy.get("chakra-input css-14m35dl").type("New_Project");
     //cy.get("#field-:r3:").type("New");
     cy.get(".chakra-react-select__input-container").click();

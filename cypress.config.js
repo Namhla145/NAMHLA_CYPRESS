@@ -7,7 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       (screenshotOnRunFailure = true),
         require("cypress-mochawesome-reporter/plugin")(on); // html reporter
-      baseUrl: "https://dev.autopv.7secondsolar.com/";
+      baseUrl: "https://uat.rici.co.za/";
     },
   },
 });

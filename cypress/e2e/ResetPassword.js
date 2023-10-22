@@ -1,7 +1,7 @@
 describe("Sign-Up Functionality", () => {
   beforeEach(() => {
     // Loading the sign-up page before each test
-    cy.visit("https://dev.autopv.7secondsolar.com/register");
+    cy.visit("https://uat.rici.co.za/");
   });
   it("should sign up with valid credentials", () => {
     // Generate a unique username and email to avoid conflicts with existing users

@@ -25,12 +25,13 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add("login", (email, password) => {
   cy.session([email, password], () => {
-    cy.visit("https://dev.autopv.7secondsolar.com/");
-
-    cy.get('input[name="email"]').type("namhlmaninjw@gmail.com");
-    cy.get('input[name="password"]').type("Indie123@");
-    cy.get(".css-b5leqj > .chakra-button").click();
-
+    cy.visit("https://uat.rici.co.za/");
+    cy.get('input[name="emailAddress"]').type(
+      "namhla.maninjwa+testing@sovtech.com"
+    ); // Replace with your username
+    cy.get('input[name="password"]').type("Indie77489656@");
+    cy.get(".css-3rvhel").click();
+    cy.wait(5000);
     //Add assertions or further actions after successful login
 
     // {

@@ -5,5 +5,6 @@ beforeEach(() => {
 it("Log a Support Request ", () => {
   //Test case to Log a support request
   cy.get(".chakra-link css-1v1660y").click();
+
   cy.wait(5000);
 });
